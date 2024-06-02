@@ -1,70 +1,70 @@
 {
-    "name": "static-site-pack",
-    "description": "静态项目编译脚手架",
-    "version": "1.1.4",
-    "main": "bin/static-site-pack.js",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/shijistar/static-site-pack.git"
-      },
-    "author": "李凤宝 <shijistar@gmail.com>",
-    "license": "MIT",
-    "files": [
-        "bin/",
-        "gulp-tasks/",
-        "lib/",
-        "index.js",
-        "index_head.js",
-        "index.css",
-        "core-js-custom.js",
-        "config.defaults.js",
-        "gulpfile.js",
-        "webpack.config.js",
-        "README.md",
-        "package.json"
-    ],
-    "bin": {
-        "static-site-pack": "./bin/static-site-pack.js"
-    },
-    "dependencies": {
-        "camelcase": "6.0.0",
-        "clean-webpack-plugin": "3.0.0",
-        "colors": "1.4.0",
-        "copy-webpack-plugin": "5.1.1",
-        "css-loader": "^3.6.0",
-        "dotenv": "8.2.0",
-        "fs-extra": "9.0.0",
-        "gulp": "4.0.2",
-        "gulp-cdnizer": "2.2.0",
-        "gulp-cli": "2.2.0",
-        "gulp-dest-clean": "0.5.0",
-        "gulp-file-include": "2.2.2",
-        "gulp-filter": "6.0.0",
-        "gulp-ignore": "3.0.0",
-        "gulp-rev": "9.0.0",
-        "gulp-using": "0.1.1",
-        "html-loader": "1.1.0",
-        "html-webpack-injector": "^1.1.4",
-        "html-webpack-plugin": "4.3.0",
-        "inquirer": "7.1.0",
-        "js-sha256": "0.9.0",
-        "klaw-sync": "6.0.0",
-        "loader-utils": "^2.0.0",
-        "lodash": "^4.17.15",
-        "micromatch": "^4.0.2",
-        "papaparse": "5.3.0",
-        "schema-utils": "^2.7.0",
-        "string.prototype.replaceall": "1.0.6",
-        "shelljs": "0.8.4",
-        "signale": "1.4.0",
-        "webpack": "4.43.0",
-        "webpack-cli": "3.3.11",
-        "webpack-dev-server": "3.11.0"
-    },
-    "engines": {
-        "node": ">=12"
-    },
-    "devDependencies": {
-        "@types/signale": "^1.4.2"
-    }
+  "name": "static-site-pack",
+  "description": "静态项目编译脚手架，支持国际化",
+  "version": "1.0.0",
+  "main": "bin/static-site-pack.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shijistar/static-site-pack.git"
+  },
+  "author": "李凤宝 <shijistar@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "bin/",
+    "gulp-tasks/",
+    "lib/",
+    "index.js",
+    "index_head.js",
+    "index.css",
+    "core-js-custom.js",
+    "config.defaults.js",
+    "gulpfile.js",
+    "webpack.config.js",
+    "README.md",
+    "package.json"
+  ],
+  "bin": {
+    "static-site-pack": "./bin/static-site-pack.js"
+  },
+  "dependencies": {
+    "camelcase": "6.0.0",
+    "clean-webpack-plugin": "3.0.0",
+    "colors": "1.4.0",
+    "copy-webpack-plugin": "5.1.1",
+    "css-loader": "^3.6.0",
+    "dotenv": "8.2.0",
+    "fs-extra": "9.0.0",
+    "gulp": "4.0.2",
+    "gulp-cdnizer": "2.2.0",
+    "gulp-cli": "2.2.0",
+    "gulp-dest-clean": "0.5.0",
+    "gulp-file-include": "2.2.2",
+    "gulp-filter": "6.0.0",
+    "gulp-ignore": "3.0.0",
+    "gulp-rev": "9.0.0",
+    "gulp-using": "0.1.1",
+    "html-loader": "1.1.0",
+    "html-webpack-injector": "^1.1.4",
+    "html-webpack-plugin": "4.3.0",
+    "inquirer": "7.1.0",
+    "js-sha256": "0.9.0",
+    "klaw-sync": "6.0.0",
+    "loader-utils": "^2.0.0",
+    "lodash": "^4.17.15",
+    "micromatch": "^4.0.2",
+    "papaparse": "5.3.0",
+    "schema-utils": "^2.7.0",
+    "string.prototype.replaceall": "1.0.6",
+    "shelljs": "0.8.4",
+    "signale": "1.4.0",
+    "webpack": "4.43.0",
+    "webpack-cli": "3.3.11",
+    "webpack-dev-server": "3.11.0"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "devDependencies": {
+    "@types/signale": "^1.4.2"
+  }
 }
