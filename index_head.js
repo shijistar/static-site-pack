@@ -1,0 +1,1 @@
+window.SSP_LANG = "$LANG$";

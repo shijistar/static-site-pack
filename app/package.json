@@ -1,0 +1,23 @@
+{
+  "name": "sample_website",
+  "version": "1.0.0",
+  "private": true,
+  "author": "李凤宝 <shijitar@gmail.com>",
+  "devDependencies": {
+      "static-site-pack": "1.1.4"
+  },
+  "scripts": {
+      "start": "npx static-site-pack --dev",
+      "build": "npx static-site-pack",
+      "extract": "npx static-site-pack --extract",
+      "export": "npx static-site-pack --export",
+      "import": "npx static-site-pack --import",
+      "all": "concurrently \"npx static-site-pack --extract\" \"npx static-site-pack\""
+  },
+  "engines": {
+      "node": ">=12"
+  },
+  "dependencies": {
+      "concurrently": "^6.3.0"
+  }
+}
