@@ -1,13 +1,13 @@
 {
-  "name": "static-site-pack",
+  "name": "@tiny-codes/static-site-pack",
   "description": "静态项目编译脚手架，支持国际化",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "bin/static-site-pack.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shijistar/static-site-pack.git"
   },
-  "author": "李凤宝 <shijistar@gmail.com>",
+  "author": "李凤宝(Leo) <shijistar@gmail.com>",
   "license": "MIT",
   "files": [
     "bin/",
@@ -24,7 +24,7 @@
     "package.json"
   ],
   "bin": {
-    "static-site-pack": "./bin/static-site-pack.js"
+    "static-site-pack": "bin/static-site-pack.js"
   },
   "dependencies": {
     "camelcase": "6.0.0",

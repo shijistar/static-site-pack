@@ -4,20 +4,20 @@
   "private": true,
   "author": "李凤宝 <shijitar@gmail.com>",
   "devDependencies": {
-      "static-site-pack": "1.1.4"
+    "@tiny-codes/static-site-pack": "^1.0.1"
   },
   "scripts": {
-      "start": "npx static-site-pack --dev",
-      "build": "npx static-site-pack",
-      "extract": "npx static-site-pack --extract",
-      "export": "npx static-site-pack --export",
-      "import": "npx static-site-pack --import",
-      "all": "concurrently \"npx static-site-pack --extract\" \"npx static-site-pack\""
+    "start": "npx @tiny-codes/static-site-pack --dev",
+    "build": "npx @tiny-codes/static-site-pack",
+    "extract": "npx @tiny-codes/static-site-pack --extract",
+    "export": "npx @tiny-codes/static-site-pack --export",
+    "import": "npx @tiny-codes/static-site-pack --import",
+    "all": "concurrently \"npx @tiny-codes/static-site-pack --extract\" \"npx @tiny-codes/static-site-pack\""
   },
   "engines": {
-      "node": ">=12"
+    "node": ">=12"
   },
   "dependencies": {
-      "concurrently": "^6.3.0"
+    "concurrently": "^6.3.0"
   }
 }

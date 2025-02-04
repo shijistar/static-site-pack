@@ -1,17 +1,9 @@
 # 静态项目脚手架
 
-## 前置条件
-
-1. node 使用最新的 lts 版本
-
-```shell
-nvm install 12 --lts
-```
-
 ## 安装
 
 ```shell
-yarn add -D static-site-pack
+npm install -D @tiny-codes/static-site-pack
 ```
 
 ## 运行
@@ -19,13 +11,13 @@ yarn add -D static-site-pack
 ### 开发模式运行
 
 ```shell
-npx static-site-pack --dev
+npx @tiny-codes/static-site-pack --dev
 ```
 
 ### 生产环境编译
 
 ```shell
-npx static-site-pack
+npx @tiny-codes/static-site-pack
 ```
 
 > 注意：
@@ -37,7 +29,7 @@ npx static-site-pack
 一般我们在开发的时候，尤其是写 html 文件的时候，需要写大量的文本。如果每一个都去 locale 文件中添加的话，效率比较低。可以直接使用 `<Locale></Locale>` 来包裹固定文字，然后等开发完成后，再执行命令，一次性把这些文本自动提取到国际化资源中去。
 
 ```bash
-npx static-site-pack --extract
+npx @tiny-codes/static-site-pack --extract
 ```
 
 例如，在页面中这样写：`<Locale>这是一段测试文本</Locale>`，然后执行命令之后，就被替换成
@@ -61,7 +53,7 @@ npx static-site-pack --extract
 所以，我们开发了一个命令，可以把所有未翻译的资源都提取到一个文件中，这样翻译起来就非常方便了。翻译完成后，还可以自动导入到系统中（参见下一节）
 
 ```bash
-npx static-site-pack --export
+npx @tiny-codes/static-site-pack --export
 ```
 
 导出后的文件保存在 `./locales/未翻译.csv` 中，可以用 Excel 打开，打开后是类似这样的，
@@ -81,7 +73,7 @@ npx static-site-pack --export
 在 Excel 中把上述待翻译的资源都翻译完成后，点击 `文件`，`另存为`，保存为 `逗号分隔值(.csv)` 文件类型。然后把文件拷贝到项目的 `./locales/已翻译.csv` 下，然后执行命令自动导入。
 
 ```bash
-npx static-site-pack --import
+npx @tiny-codes/static-site-pack --import
 ```
 
 导入成功后，中文以外的其它语言对应的文件会自动更新。
@@ -91,16 +83,16 @@ npx static-site-pack --import
 如果当前项目还没有`package.json`，需要先初始化一下，然后一路回车即可。
 
 ```shell
-yarn init
+npm init
 ```
 
 打开`package.json`，添加下面这一段代码：
 
 ```json
 "scripts": {
-    "start": "npx static-site-pack --dev",
-    "build": "npx static-site-pack",
-    "extract": "npx static-site-pack --extract"
+    "start": "npx @tiny-codes/static-site-pack --dev",
+    "build": "npx @tiny-codes/static-site-pack",
+    "extract": "npx @tiny-codes/static-site-pack --extract"
 }
 ```
 
